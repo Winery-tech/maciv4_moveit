@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: maciv4
+    relative_path: robot_description/maciv4.urdf.xacro
+  srdf:
+    relative_path: config/maciv4.srdf
+  package_settings:
+    author_name: Simon
+    author_email: simon.nordestgaard@gmail.com
+    generated_timestamp: 1710928413
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
