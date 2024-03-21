@@ -5,11 +5,10 @@
     <!-- Import maciv4 urdf file -->
     <xacro:include filename="$(find maciv4)/robot_description/maciv4.urdf.xacro" />
 
-    <!-- Import control_xacro 
+    <!-- Import control_xacro -->
     <xacro:include filename="maciv4.ros2_control.xacro" />
 
 
     <xacro:maciv4_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
-    -->
 
 </robot>
